@@ -1,0 +1,41 @@
+.popup-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cell {
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 1rem;
+    cursor: auto;
+
+    & input {
+      padding: 15px 20px;
+      font-size: 1.5rem;
+      border: 1px solid black;
+      border-radius: 1rem;
+    }
+
+    & input[type="submit"] {
+      cursor: pointer;
+    }
+  }
+  .error {
+    width: 600px;
+  }
+  .even {
+    &:hover {
+      background: #fff;
+    }
+  }
+  .odd {
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}

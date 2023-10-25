@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  gap: 15px;
+
+  & > div {
+    padding: 10px;
+    background: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .active {
+    background: #f5f5f5;
+  }
+}
+.pages {
+  display: flex;
+  gap: 5px;
+
+  & > div {
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+  }
+}
+.prev,
+.next {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+}
